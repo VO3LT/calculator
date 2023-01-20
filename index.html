@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <h2>calc</h2>
+        <input id="total" type="text">
+        <div class="calculatr">
+            <div class="numbars">
+                <div  onclick="getTotal(this.innerHTML)" class="num">7</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">8</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">9</div>
+                <div id="delete" class="num delete">Del</div>
+            </div>
+            <div class="numbars">
+                <div onclick="getTotal(this.innerHTML)" class="num">4</div> 
+                <div onclick="getTotal(this.innerHTML)" class="num">5</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">6</div> 
+                <div onclick="getTotal(this.innerHTML)" class="num blas">+</div>
+            </div>
+            <div class="numbars">
+                <div onclick="getTotal(this.innerHTML)" class="num">1</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">2</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">3</div>
+                <div onclick="getTotal(this.innerHTML)" class="num salb">-</div>
+            </div>
+            <div class="numbars">
+                <div onclick="getTotal(this.innerHTML)" class="num">.</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">0</div>
+                <div onclick="getTotal(this.innerHTML)" class="num">/</div>
+                <div onclick="getTotal(this.innerHTML)" class="num salb">*</div>
+            </div>
+            <div class="numbars reset">
+                <div id="deleteAll" class="num">Reset</div>
+                <div onclick="calc()" id="ysawe" class="num">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
